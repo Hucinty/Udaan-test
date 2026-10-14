@@ -1,0 +1,21 @@
+﻿{
+  "name": "Auto Test Maker",
+  "short_name": "TestMaker",
+  "description": "An offline-capable tool for creating tests with draggable shapes and multi-page layouts.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e2e8f0",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
