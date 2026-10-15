@@ -1,4 +1,4 @@
-const CACHE_NAME = 'test-maker-cache-v2';
+const CACHE_NAME = 'test-maker-cache-v4';
 const urlsToCache = [
   './',
   './index.html',
@@ -17,9 +17,9 @@ self.addEventListener('fetch', event => {
     caches.match(event.request)
       .then(response => {
         if (response) {
-          return response; // Return cached version
+          return response; 
         }
-        return fetch(event.request); // Fall back to network
+        return fetch(event.request); 
       })
   );
 });
@@ -31,7 +31,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName); // Clean up old caches
+            return caches.delete(cacheName); 
           }
         })
       );
