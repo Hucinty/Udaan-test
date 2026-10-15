@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'test-maker-cache-v1';
+const CACHE_NAME = 'test-maker-cache-v2';
 const urlsToCache = [
   './',
   './index.html',
